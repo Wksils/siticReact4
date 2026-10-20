@@ -1,24 +1,25 @@
-import classes from 'headerStyle.module.scss'
+import classes from './headerStyle.module.scss'
 import {Link} from 'react-router-dom'
+import {Photo} from '../../Photo.js'
 
 export default function Header(){
     return(
         <>
             <header>
                 <nav>
-                    <div>
-                        <Link></Link>
-                        <Link></Link>
-                        <Link></Link>
-                        <Link></Link>
-                        <Link></Link>
+                    <div className={classes.links}>
+                        <Link>SUPPLEMENT</Link>
+                        <Link>LASER</Link>
+                        <Link>REVIEWS</Link>
+                        <Link>JOURNAL</Link>
+                        <Link>ABOUT</Link>
                     </div>
-                    <img src="" alt="" />
-                    <div>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                    <img src={Photo.Logo} alt="" />
+                    <div className={classes.btns}>
+                        <button>HELP & SUPPORT</button>
+                        <button>ACTIVATE</button>
+                        <button>ACCOUNT</button>
+                        <button>BUY</button>
                     </div>
                 </nav>
             </header>
