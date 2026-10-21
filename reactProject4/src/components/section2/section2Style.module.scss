@@ -1,0 +1,53 @@
+@use '../style_layout.scss' as lm;
+
+.sect2{
+    @extend %base-layout;
+    height: 72vh;
+    .container{
+        @include lm.container-layout(100%, 93%);
+        .info:nth-of-type(1){
+            background-image: url('../../assets/girl1.png');
+        }
+        .info:nth-of-type(2){
+            background-image: url('../../assets/girl2.png');
+        }
+        .info{
+            @include lm.container-layout-column(49%, 100%);
+            background-size: cover;
+            align-items: center;
+            justify-content: end;
+            .cont{
+                @include lm.container-layout-column(80%, 45%);
+                justify-content: space-evenly;
+                align-items: center;
+                h2{
+                    color: white;
+                    font: {
+                        size: 2.6rem;
+                        weight: 350;
+                    }
+                }
+                p{
+                    color: white;
+                    font-size: 1.4rem;
+                    width: 42%;
+                    text-align: center;
+                    font-weight: 300;
+                    line-height: 2.3;
+                }
+                div{
+                    @include lm.container-layout(53%, 15%);
+                    button{
+                        width: 48%;
+                        height: 100%;
+                        border: none;
+                        background-color: transparent;
+                        color: white;
+                        font-size: 1.3rem;
+                    }
+                    button:hover{ border: #FFFFFF 2px solid;}
+                }
+            }
+        }
+    }
+}
