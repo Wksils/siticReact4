@@ -1,0 +1,39 @@
+@use '../style_layout.scss' as lm;
+
+.sect1{
+    @extend %base-layout;
+    height: 90vh;
+    background-image: url('../../assets/bacgraund1sect.png');
+    background-size: cover;
+    color: white;
+    .container{
+        @include lm.container-layout-column(80%, 40%);
+        align-items: center;
+        h1{
+            font: {
+                size: 5rem;
+                weight: 350;
+            }
+        }
+        p{
+             font: {
+                size: 1.4rem;
+                weight: 300;
+            }
+            width: 40%;
+            text-align: center;
+            line-height: 1.8;
+        }
+        div{
+            @include lm.container-layout(40%, 14%);
+            button{
+                width: 48%;
+                height: 100%;
+                border: #FFFFFF 2px soild;
+                background-color: transparent;
+                color: white;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

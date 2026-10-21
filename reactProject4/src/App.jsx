@@ -8,6 +8,7 @@ export default function App() {
     <>
       <BrowserRouter>
         <Header/>
+        <Page1/>
         <Routes>
           <Route path='/Page1' index element = {Page1}/>
         </Routes>

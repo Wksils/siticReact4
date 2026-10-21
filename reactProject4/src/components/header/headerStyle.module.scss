@@ -2,17 +2,31 @@
 
 header{
     @extend %base-layout;
-    height: 10vh;
+    height: 8vh;
     nav{
         @include lm.container-layout(90%, 90%);
         .links{
             @include lm.container-layout(35%, 100%);
-            a{
-                text-decoration: none;
-            }
+            
+        }
+        img{
+            height: 23%;
+            width: auto;
         }
         .btns{
             @include lm.container-layout(35%, 100%);
+            button{
+                color: #D4D4D4;
+                border: none;
+                width: auto;
+                padding: 0 5%;
+                height: 33%;
+                background-color: transparent;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
         }
     }
 }
