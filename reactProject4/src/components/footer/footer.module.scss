@@ -1,0 +1,63 @@
+@use '../style_layout.scss' as lm;
+footer{
+    @extend %base-layout;
+    height: 55vh;
+    background-color: black;
+    color: #7E7E7E;
+    .container{
+        @include lm.container-layout(70%, 60%);
+        .right{
+            @include lm.container-layout(60%, 100%);
+            div{
+                @include lm.container-layout-column(auto, 100%);
+                justify-content: start;
+                gap: 15%;
+                p{color: white; font-size: 1.3rem; font-weight: 300;}
+                ul{
+                    list-style: none;
+                    @include lm.container-layout-column(100%, 100%);
+                    justify-content: flex-start;
+                    gap: 5%;
+                }
+                .asd li:last-child{color: white;}
+            }
+            
+        }
+        .left{
+            @include lm.container-layout-column(35%, 100%);
+            align-items: end;
+            .txt{color: white; font-size: 1.3rem; font-weight: 300;}
+            .top{
+                @include lm.container-layout-column(100%, 30%);
+                align-items: end;
+                div{
+                    @include lm.container-layout(100%, 55%);
+                    input{
+                        height: 100%;
+                        width: 65%;
+                        border: white 1px solid;
+                        background-color: black;
+                    }::placeholder{
+                        color: #7E7E7E;
+                        font-size: 1.1rem;
+                        padding-left: 5%;
+                    }
+                    button{
+                        width: 35%;
+                        height: 100%;
+                        border: none;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .niz{
+                @include lm.container-layout-column(70%, 25%);
+                align-items: end;
+                div{
+                    @include lm.container-layout(100%, 50%);
+                    img{width: 12%; height: auto;}
+                }
+            }
+        }
+    }
+}

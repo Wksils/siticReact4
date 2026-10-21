@@ -9,6 +9,11 @@ import brand6 from './assets/brand6.png'
 import brand7 from './assets/brand7.png'
 import brand8 from './assets/brand8.png'
 import brand9 from './assets/brand9.png'
+import fb from './assets/fb.png'
+import inl from './assets/inl.png'
+import insta from './assets/insta.png'
+import pin from './assets/pin.png'
+import yt from './assets/yt.png'
 
 export const Photo = {
     Logo:Logo,
@@ -21,5 +26,10 @@ export const Photo = {
     brand6:brand6,
     brand7:brand7,
     brand8:brand8,
-    brand9:brand9
+    brand9:brand9,
+    fb:fb,
+    inl:inl,
+    insta:insta,
+    pin:pin,
+    yt:yt
 }
