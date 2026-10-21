@@ -1,0 +1,37 @@
+@use '../style_layout.scss' as lm;
+
+.section3{
+    @extend %base-layout;
+    height: 88vh;
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        .info{
+            @include lm.container-layout-column(50%, 80%);
+            align-items: center;
+            h2{
+                font: {
+                    size: 3rem;
+                    weight: 350;
+                }
+            }
+            img{
+                width: 60%;
+                height: auto;
+            }
+            p{
+                width: 80%;
+                font: {
+                    size: 1.4rem;
+                    weight: 300;
+                }
+                text-align: center;
+            }
+        }
+    }
+}
