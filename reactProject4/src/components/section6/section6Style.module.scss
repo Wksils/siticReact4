@@ -1,1 +1,14 @@
 @use '../style_layout.scss' as lm;
+
+.section6{
+    @extend %base-layout;
+    height: 65vh;
+    .container{
+        width: 100%;
+        height: 80%;
+        .mySwiper{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
