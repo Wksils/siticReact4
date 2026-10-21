@@ -1,0 +1,31 @@
+@use '../style_layout.scss' as lm;
+
+.section5{
+    background-image: url('../../assets/bacSect5.png');
+    @extend %base-layout;
+    height: 55vh;
+    background-size: cover;
+    justify-content: end;
+    .container{
+        width: 45%;
+        height: 80%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .info{
+            @include lm.container-layout-column(60%, 45%);
+            h3{
+                font: {
+                    size: 3rem;
+                    weight: 350;
+                }
+                margin-bottom: 5%;
+            }
+            p{
+                font-size: 1.4rem;
+                color: #666666;
+            }
+            a{color: #1B1B1B; font-size: 1.4rem;}
+        }
+    }
+}
