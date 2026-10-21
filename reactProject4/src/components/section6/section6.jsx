@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+
 import { Photo } from '../../Photo';
 
 export default function Section6(){
@@ -31,12 +32,15 @@ export default function Section6(){
                         }}
                         modules={[Pagination]}
                         className={classes.mySwiper}
+                        initialSlide={1}
                     >
                         {brands.map((i, index) => (
                             <SwiperSlide key={index}>
                                 <div className={classes.brand}>
-                                    <p>{i.text}</p>
-                                    <img src={i.photo} alt="" />
+                                    <div>
+                                        <p>{i.text}</p>
+                                        <img src={i.photo} alt="" />
+                                    </div>
                                 </div>
                             </SwiperSlide>
                         ))}

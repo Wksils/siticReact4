@@ -6,9 +6,56 @@
     .container{
         width: 100%;
         height: 80%;
+        display: flex;
+        align-items: center;
         .mySwiper{
             width: 100%;
-            height: 100%;
+            height: 70%;
+            --swiper-pagination-bullet-size: 14px;   /* Меняйте этот размер на нужный (в px) */
+            --swiper-pagination-bullet-width: 14px;  /* Дублируем для надежности */
+            --swiper-pagination-bullet-height: 14px;
+             :global(.swiper-pagination-bullet) { border-radius: 0 !important; }
+             :global(.swiper-pagination-bullet-active) { background-color: #000 !important; }
+            .brand{
+                height: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                div{
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        width: 97%;
+                        color: black;
+                        font-size: 1.9rem;
+                        text-align: center;
+                        font-weight: 400;
+                    }
+                    img{
+                        width: 90%;
+                        height: auto;
+                    }
+                }
+            }
+            
         }
+        .swiper-pagination-bullet {
+                border-radius: 0 !important; 
+                width: 10px !important;               
+                height: 10px !important;                
+                background-color: #cccccc;  
+                opacity: 0.5;               
+                transition: all 0.3s ease; 
+                }
+
+                .swiper-pagination-bullet-active {
+                background-color: #000000 !important; 
+                opacity: 1;                        
+            }
     }
 }
