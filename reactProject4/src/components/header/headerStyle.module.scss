@@ -3,11 +3,14 @@
 header{
     @extend %base-layout;
     height: 8vh;
+     @include lm.respond-down('tablet') {
+        height: 10vh;
+     }
     nav{
+        .poloski{display: none;}
         @include lm.container-layout(90%, 90%);
         .links{
             @include lm.container-layout(35%, 100%);
-            
         }
         img{
             height: 23%;
@@ -25,6 +28,27 @@ header{
                 &:hover{
                     background-color: black;
                     color: white;
+                }
+            }
+        } 
+        @include lm.respond-down('tablet') {
+            height: 60%;
+            width: 90%;
+            .poloski{display: block; height: 100%;}
+            flex-direction: column-reverse;
+            .btns{display: none;}
+            .links{width: 80%; height: 50%;}
+            
+        }
+        @include lm.respond-down('mobile'){
+            width: 90%;
+            .logo{display: none;}
+            .links{
+                height: 100%;
+                width: 100%;
+                a{font-size: 0.8rem;}
+                .poloski{
+                    height: 45%;
                 }
             }
         }

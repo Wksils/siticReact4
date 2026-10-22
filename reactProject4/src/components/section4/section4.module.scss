@@ -30,6 +30,22 @@
                     font-size: 1.3rem;
                 }
             }
+            @include lm.respond-down('tablet') {
+                width: 80%;
+            }
+            @include lm.respond-down('mobile'){
+                height: 35%;
+                h2{font-size: 2.3rem;}
+                div{
+                    flex-direction: column;
+                    width: 90%;
+                    height: 35%;
+                    button{
+                        height: 40%;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

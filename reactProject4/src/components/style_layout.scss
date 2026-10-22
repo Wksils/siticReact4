@@ -1,3 +1,18 @@
+$breakpoints: (
+  'tablet': 900px,  
+  'mobile': 500px 
+);
+
+@mixin respond-down($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Неизвестный брейкпоинт: #{$breakpoint}.";
+  }
+}
+
 %base-layout {
     width: 100vw;
     display: flex;

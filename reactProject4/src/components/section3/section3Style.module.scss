@@ -32,6 +32,15 @@
                 }
                 text-align: center;
             }
+            @include lm.respond-down('tablet') {
+                width: 90%;
+            }   
+            @include lm.respond-down('mobile'){
+                h2{font-size: 2rem;}
+                img{width: 80%;}
+                p{font-size: 1.3rem; width: 90%;}
+            }
         }
+
     }
 }

@@ -42,7 +42,14 @@
                     }
                 }
             }
-            
+            @include lm.respond-down('tablet') {
+                .brand{
+                    div{
+                        width: 100%;
+                        p{font-size: 1.5rem;}
+                    }
+                }
+            }
         }
         .swiper-pagination-bullet {
                 border-radius: 0 !important; 

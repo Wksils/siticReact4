@@ -4,14 +4,31 @@ footer{
     height: 55vh;
     background-color: black;
     color: #7E7E7E;
+    @include lm.respond-down('tablet') {
+        height: 170vh;
+    }
     .container{
         @include lm.container-layout(70%, 60%);
+        @include lm.respond-down('tablet') {
+            flex-direction: column;
+            width: 90%;
+            height: 90%;
+        }
         .right{
             @include lm.container-layout(60%, 100%);
+            @include lm.respond-down('tablet') {
+                flex-wrap: wrap;
+                height: 100vh;
+                width: 80%;
+            }
             div{
                 @include lm.container-layout-column(auto, 100%);
                 justify-content: start;
                 gap: 15%;
+                @include lm.respond-down('tablet') {
+                    width: 40%;
+                    height: 60%;
+                }
                 p{color: white; font-size: 1.3rem; font-weight: 300;}
                 ul{
                     list-style: none;
@@ -26,6 +43,10 @@ footer{
         .left{
             @include lm.container-layout-column(35%, 100%);
             align-items: end;
+            @include lm.respond-down('tablet') {
+                width: 90%;
+                height: 40vh;
+            }
             .txt{color: white; font-size: 1.3rem; font-weight: 300;}
             .top{
                 @include lm.container-layout-column(100%, 30%);
@@ -56,6 +77,9 @@ footer{
                 div{
                     @include lm.container-layout(100%, 50%);
                     img{width: 12%; height: auto;}
+                    @include lm.respond-down('tablet') {
+                        img{width: 10%;}
+                    }
                 }
             }
         }

@@ -27,5 +27,34 @@
             }
             a{color: #1B1B1B; font-size: 1.4rem;}
         }
+        @include lm.respond-down('tablet') {
+            width:65%;
+            justify-content: end; 
+            .info{
+                width: 80%;
+                height: 60%;
+                h3{
+                    color: white;
+                    font-size: 3rem;
+                }
+
+                p{
+                    width: 70%;
+                    color: #adadad;
+                }
+                a{color: #161616;}
+            }  
+        }
+        @include lm.respond-down('mobile'){
+            width: 90%;
+            .info{
+                height: 70%;
+                width: 95%;
+                p{width: 85%;}
+            }
+        }
+    }
+    @include lm.respond-down('tablet') {
+        justify-content: start;       
     }
 }

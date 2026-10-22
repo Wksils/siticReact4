@@ -33,6 +33,17 @@ export default function Section6(){
                         modules={[Pagination]}
                         className={classes.mySwiper}
                         initialSlide={1}
+                        breakpoints={{
+                            400: {
+                                slidesPerView: 2
+                            },
+                            600: {
+                                slidesPerView: 3
+                            },
+                            800: {
+                                slidesPerView: 4
+                            }
+                        }}
                     >
                         {brands.map((i, index) => (
                             <SwiperSlide key={index}>

@@ -14,6 +14,7 @@ import inl from './assets/inl.png'
 import insta from './assets/insta.png'
 import pin from './assets/pin.png'
 import yt from './assets/yt.png'
+import poloski from './assets/poloski.png'
 
 export const Photo = {
     Logo:Logo,
@@ -31,5 +32,6 @@ export const Photo = {
     inl:inl,
     insta:insta,
     pin:pin,
-    yt:yt
+    yt:yt,
+    poloski:poloski
 }
