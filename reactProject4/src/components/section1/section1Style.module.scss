@@ -57,5 +57,11 @@
                 }
             }
         }
+        @include lm.respond-down('laptop2'){
+            height: 50%;
+            h1{text-align: center;}
+            p{width: 50%;}
+            div{height: 10%;}
+        }
     }
 }
