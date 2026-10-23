@@ -49,6 +49,14 @@
                 }
             }
         }
+        @include lm.respond-down('laptop2') {
+            .info{
+                .cont{
+                    p{width: 70%;}
+                    div{width: 70%;}
+                }
+            }
+        }
          @include lm.respond-down('tablet') {
             height: 96%;
             flex-direction: column;
