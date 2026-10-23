@@ -30,6 +30,10 @@
                     font-size: 1.3rem;
                 }
             }
+            @include lm.respond-down('laptop2'){
+                width: 60%;
+                height: 25%;
+            }
             @include lm.respond-down('tablet') {
                 width: 80%;
             }
