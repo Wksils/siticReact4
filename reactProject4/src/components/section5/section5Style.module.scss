@@ -28,21 +28,17 @@
             a{color: #1B1B1B; font-size: 1.4rem;}
         }
         @include lm.respond-down('laptop1') {
-            .container{
                 width: 35%;
                 .info{
                     width: 80%;
                 }
-            }
         }
         @include lm.respond-down('laptop2'){
-            .container{
                 width: 25%;
                 .info{
                     height: 70%;
                     width: 95%;
                 }
-            }
         }
         @include lm.respond-down('tablet') {
             width:65%;
