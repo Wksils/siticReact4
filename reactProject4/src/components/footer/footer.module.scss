@@ -9,16 +9,16 @@ footer{
     }
     .container{
         @include lm.container-layout(70%, 60%);
-        @include lm.respond-down('tablet') {
-            flex-direction: column;
-            width: 90%;
-            height: 90%;
-        }
         @include lm.respond-down('laptop1') {
             width: 80%;
         }
         @include lm.respond-down('laptop2'){
             width: 90%;
+        }
+        @include lm.respond-down('tablet') {
+            flex-direction: column;
+            width: 90%;
+            height: 90%;
         }
         .right{
             @include lm.container-layout(60%, 100%);
