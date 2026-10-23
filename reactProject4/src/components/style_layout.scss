@@ -1,6 +1,8 @@
 $breakpoints: (
   'tablet': 900px,  
-  'mobile': 500px 
+  'mobile': 500px,
+  'laptop1': 1400px,
+  'laptop2': 1300px
 );
 
 @mixin respond-down($breakpoint) {
