@@ -31,6 +31,19 @@ header{
                 }
             }
         } 
+        @include lm.respond-down('laptop2'){
+            .links{
+                width: 40%;
+                a{font-size: 0.9rem;}
+            }
+            img{
+                height: 20%;
+            }
+            .btns{
+                width: 40%;
+                font-size: 0.9rem;
+            }
+        }
         @include lm.respond-down('tablet') {
             height: 60%;
             width: 90%;
@@ -50,19 +63,6 @@ header{
                 .poloski{
                     height: 45%;
                 }
-            }
-        }
-        @include lm.respond-down('laptop2'){
-            .links{
-                width: 40%;
-                a{font-size: 0.9rem;}
-            }
-            img{
-                height: 20%;
-            }
-            .btns{
-                width: 40%;
-                font-size: 0.9rem;
             }
         }
     }
